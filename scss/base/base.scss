@@ -1,0 +1,19 @@
+@import "settings/settings.scss";
+
+@font-face {
+	font-family: 'Hind';
+	src: url('../../fonts/Hind-Regular.ttf');
+}
+
+body{
+	font-family: 'Hind',sans-serif;
+	font-size: 14px;
+	color: $light;
+		@media(min-width: 768px){
+			font-size: 22px;
+		}
+}
+
+a{
+	text-decoration: none;
+}

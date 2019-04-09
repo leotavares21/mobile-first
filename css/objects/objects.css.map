@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,YAAY;ACEZ,eAAe;EACd,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;;;AAGf,UAAU;EACT,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,OAAO;EACf,OAAO,EAAE,KAAK;;;AAGf,0BAAyB;EACxB,eAAe;IACd,KAAK,EAAE,GAAG;;;EAEX,UAAU;IACT,KAAK,EAAE,GAAG",
+"sources": ["../../scss/settings/settings.scss","../../scss/objects/objects.scss"],
+"names": [],
+"file": "objects.css"
+}

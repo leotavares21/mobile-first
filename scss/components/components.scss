@@ -1,0 +1,348 @@
+/* MAIN CONTENT */
+
+@import "settings/settings.scss";
+
+.escopo-main{
+	position: relative;
+	}
+.escopo-1, .escopo-2{
+	position: sticky;
+	top: 0;
+	background-color: $dark;
+	}
+
+.main-content {
+  	height: 65vh;
+}
+.main-content::before{
+	content:'';
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../../images/black-panther-post.jpg);
+	background-repeat: no-repeat;
+	background-size: 110% 120%;
+	background-position: center;
+  	filter: blur(14px);
+	height: 65vh;
+		@media(min-width: 768px){
+				background-size: 100%;
+				filter: brightness(90%) blur(20px);
+		}
+}
+.nav-header{
+	padding-top: 5vh;
+}
+.nav-header{
+
+	.navbar{
+		display: flex;
+		text-indent: -9999px;
+		filter: blur(0);
+		position: relative;
+	} 
+
+	.navBtn{
+		background-size: contain;
+		width: 4vw;
+		height: auto;
+	}
+}
+
+
+.nav-header .navbar {
+		.navBtn:nth-child(1){
+		background-image: url(../../images/ico.png);
+		background-repeat: no-repeat;
+	}
+	.navBtn:nth-child(2){
+		background-image: url(../../images/heart_icn.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		right: 0;
+		margin-right: 2.5em;
+	}
+	.navBtn:nth-child(3){
+		background-image: url(../../images/share.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		right: 0;
+	}
+}
+
+.post-content .figure-image {
+  text-align: center;
+  filter: blur(0);
+  margin-top: 2vh;
+}
+
+.post-content .figure-image{
+
+	img {
+		width: 175px;
+		height: 260px;
+			@media(min-width: 768px){
+					width: 40vw;
+					height: auto;
+			}
+			@media(min-width: 1024px){
+					width: 30vh;
+			}
+	  }
+	  
+	  .figLegend{
+		  margin-top: 2vh;
+	  }
+	  .figLegend::before{
+		  content: '';
+		  background-image: url(../../images/play_icn.png);
+		  background-size: 100%;
+		  width: 1.42em;
+		  height: 1.42em;
+		  display: inline-block;
+		  vertical-align: middle;
+		  margin-right: 2vw;
+		  			@media(min-width: 768px){
+						  margin-right: 1vw;
+					  }
+	  }
+}
+
+
+/*CONTENT   1 */
+
+.text-gray{
+	color: $sec;
+}
+
+.content-1{
+				min-height: 30vh;
+		 .prev-title{
+				margin-bottom: 2.5vh;
+		}
+		 .prev-title:before{
+				content: '';
+				background-image: url(../../images/in_theaters.png);
+				background-repeat: no-repeat;
+				background-size: 8px 10px;
+				display: inline-block;
+				width: 8px;
+				height: 10px;
+				margin-right: 1em;
+				@media (min-width: 500px){
+					background-size: 14px 16px;
+					width: 14px;
+					height: 16px;
+				}
+		}
+		.main-title{
+			font-size: 2.10em;
+		}
+		.text-gray{
+			margin-bottom: 1.5vh;
+		}
+
+		.rate-movie:before{
+			content: '';
+			display: inline-block;
+			background-image: url(../../images/star_on.png);
+			background-repeat: no-repeat;
+			background-size: 11px 11px;
+			width: 11px;
+			height: 11px;
+			margin-right: 0.5em;
+			@media (min-width: 600px){
+				background-size: 20px 20px;
+				width: 20px;
+				height: 20px;
+			}
+		}
+		.rate-movie:after{
+			content: '';
+			display: inline-block;
+			background-image: url(../../images/imdb.png);
+			background-repeat: no-repeat;
+			background-size: 25px 15px;	
+			width: 25px;
+			height: 15px;
+			margin-left: 0.5em;
+			vertical-align: middle;
+			@media (min-width: 600px){
+				background-size: 55px 30px;
+				width: 55px;
+				height: 30px;
+			}
+		}
+}
+
+/*CONTENT 2 */
+
+.content-2{
+		min-height: 30vh;
+		.text-gray{
+			margin-bottom: 1em;
+		}
+		.movie-type{
+			display: flex; 
+			margin: 2em 0;
+		}
+		.type-item{
+			margin-right: 2em;
+			border: 1px solid $light;
+			border-radius: 20px;
+			padding: 6px 10px;
+			
+		}
+		.type-item a{
+			color: $light;
+		}
+		p{
+			line-height: 3vh;
+			text-align: justify;
+			
+
+		}
+}
+
+/*CONTENT 3 */
+.content-3{
+	min-height: 30vh;
+	@media(min-width: 768px){
+		min-height: 35vh;
+	}
+	.text-gray{
+		margin-bottom: 2vh;
+	}
+	.actors-content{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 2vh;
+	}
+	.actors-desc{
+		font-size: 0.85em;
+		text-align: center;
+		line-height: 2vh;
+		margin-top: 1vh;
+	}
+	.actors-desc img{
+		width: 15vw;
+		border-radius: 50%;
+		margin-bottom: 1vh;
+			@media(min-width: 940px){
+				width: 8vw;
+			}
+	}
+	.text-light-gray{
+		margin-top: 1em;
+		color: $light-sec;
+	}
+}
+
+/* CONTENT 4 */
+	.content-4{
+		min-height: 50vh;
+		.text-gray{
+			margin-bottom: 2vh;
+		}
+		.theaters-content{
+			display: flex;
+			flex-direction: column;
+		}
+		.movie-theaters{
+			display: flex;
+			justify-content: space-between;
+		}
+		.movie-theaters img{
+			width: 75px;
+			height: 75px;
+			margin-bottom: 3vh;
+		}
+		.theaters-texts{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			margin-top: 0.5em;
+			margin-left: 2vw;
+	
+		}
+		.theaters-texts h6{
+			font-size: 1.14em;
+			margin-bottom: 1.5vh;
+		}
+		.theaters-texts .text-light-gray{
+			color: $light-sec;
+			font-size: 0.85em;
+		}
+	}
+	.btn-container{
+		width: 80%;
+		margin: 0  auto;
+			@media(max-width: 1024px){
+				width: 90%;
+			}
+	}
+	.btn-content{
+		position: fixed;
+		bottom: 0;
+		display: flex;
+		justify-content: space-between;
+		background-color: $dark;
+		width: 80%;
+		height: 100px;
+			@media(max-width: 1024px){
+				width: 90%;
+				height: 80px;
+			}
+	}
+	.btn-content a{
+		color: $light;
+		width: 38vw;
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		margin-top: 15px;
+			@media(max-width: 1024px){
+				width: 44vw;
+				height: 50px;
+				line-height: 50px;
+			}
+	}
+
+	.btn-content .btn-red{
+		background-color: $red;
+	}
+	.btn-content .btn-black{
+		border: 1px solid $light;
+		box-sizing: border-box;
+	}
+	.btn-content .btn-red:before{
+		content: '';
+		display: inline-block;
+		background-image: url(../../images/book_now_icn.png);
+		background-repeat: no-repeat;
+		background-size: 12px 15px;
+		vertical-align: middle;
+		width: 12px;
+		height: 15px;
+		margin-right: 0.5em;
+	}
+	.btn-content .btn-black:before{
+		content: '';
+		display: inline-block;
+		background-image: url(../../images/rate_movie.png);
+		background-repeat: no-repeat;
+		background-size: 14px 15px;
+		vertical-align: middle;
+		width: 14px;
+		height: 15px;
+		margin-right: 0.5em;
+	}
+
+
+
+
+
+

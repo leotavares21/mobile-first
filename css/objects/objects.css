@@ -1,0 +1,23 @@
+/* COLORS */
+.container-main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 90%;
+  margin: 0  auto;
+  padding: 2vh 0;
+}
+
+@media (min-width: 1024px) {
+  .container-main {
+    width: 80%;
+  }
+
+  .container {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=objects.css.map */

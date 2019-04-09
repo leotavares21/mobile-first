@@ -1,0 +1,21 @@
+/* COLORS */
+@font-face {
+  font-family: 'Hind';
+  src: url("../../fonts/Hind-Regular.ttf");
+}
+body {
+  font-family: 'Hind',sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=base.css.map */
