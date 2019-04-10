@@ -28,7 +28,7 @@
 	background-position: center;
   	filter: blur(14px);
 	height: 65vh;
-		@media(min-width: 768px){
+		@media(min-width: 280px){
 				background-size: 100%;
 				filter: brightness(90%) blur(20px);
 		}
@@ -84,12 +84,13 @@
 	img {
 		width: 175px;
 		height: 260px;
-			@media(min-width: 768px){
+			@media(min-width: 280px){
 					width: 40vw;
 					height: auto;
 			}
 			@media(min-width: 1024px){
-					width: 30vh;
+					width: auto;
+					height: 40vh;
 			}
 	  }
 	  
@@ -105,7 +106,7 @@
 		  display: inline-block;
 		  vertical-align: middle;
 		  margin-right: 2vw;
-		  			@media(min-width: 768px){
+		  			@media(min-width: 280px){
 						  margin-right: 1vw;
 					  }
 	  }
@@ -132,7 +133,7 @@
 				width: 8px;
 				height: 10px;
 				margin-right: 1em;
-				@media (min-width: 500px){
+				@media (min-width: 768px){
 					background-size: 14px 16px;
 					width: 14px;
 					height: 16px;
@@ -154,7 +155,7 @@
 			width: 11px;
 			height: 11px;
 			margin-right: 0.5em;
-			@media (min-width: 600px){
+			@media (min-width: 768px){
 				background-size: 20px 20px;
 				width: 20px;
 				height: 20px;
@@ -170,7 +171,7 @@
 			height: 15px;
 			margin-left: 0.5em;
 			vertical-align: middle;
-			@media (min-width: 600px){
+			@media (min-width: 768px){
 				background-size: 55px 30px;
 				width: 55px;
 				height: 30px;
@@ -202,8 +203,14 @@
 		p{
 			line-height: 3vh;
 			text-align: justify;
-			
-
+		}
+		@media(max-width: 320px){
+			p{
+				text-align: left;
+			}
+			.type-item{
+				font-size: 0.8em;
+			}
 		}
 }
 
@@ -226,6 +233,9 @@
 		text-align: center;
 		line-height: 2vh;
 		margin-top: 1vh;
+			@media(max-width: 315px){
+				font-size: 0.7em;
+			}
 	}
 	.actors-desc img{
 		width: 15vw;
@@ -244,6 +254,9 @@
 /* CONTENT 4 */
 	.content-4{
 		min-height: 50vh;
+			@media(max-width: 315px){
+				min-height: 60vh;
+			}
 		.text-gray{
 			margin-bottom: 2vh;
 		}
@@ -296,6 +309,9 @@
 				width: 90%;
 				height: 80px;
 			}
+			@media(max-width: 280px){
+				height: 60px;
+			}
 	}
 	.btn-content a{
 		color: $light;
@@ -308,6 +324,12 @@
 				width: 44vw;
 				height: 50px;
 				line-height: 50px;
+			}
+			@media(min-width: 280px){
+				height: 35px;
+				line-height: 35px;
+				margin-top: 10px;
+				font-size: 0.8em;
 			}
 	}
 
@@ -328,6 +350,12 @@
 		width: 12px;
 		height: 15px;
 		margin-right: 0.5em;
+		@media(max-width: 315px){
+			width: 8px;
+			height: 11px;
+			background-size: 8px 11px;
+			margin-right: 0.2em;
+		}
 	}
 	.btn-content .btn-black:before{
 		content: '';
@@ -339,6 +367,12 @@
 		width: 14px;
 		height: 15px;
 		margin-right: 0.5em;
+		@media(max-width: 315px){
+			width: 10px;
+			height: 11px;
+			background-size: 10px 11px;
+			margin-right: 0.2em;
+		}
 	}
 
 

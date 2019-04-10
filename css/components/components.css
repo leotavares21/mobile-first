@@ -29,7 +29,7 @@
   filter: blur(14px);
   height: 65vh;
 }
-@media (min-width: 768px) {
+@media (min-width: 280px) {
   .main-content::before {
     background-size: 100%;
     filter: brightness(90%) blur(20px);
@@ -80,7 +80,7 @@
   width: 175px;
   height: 260px;
 }
-@media (min-width: 768px) {
+@media (min-width: 280px) {
   .post-content .figure-image img {
     width: 40vw;
     height: auto;
@@ -88,7 +88,8 @@
 }
 @media (min-width: 1024px) {
   .post-content .figure-image img {
-    width: 30vh;
+    width: auto;
+    height: 40vh;
   }
 }
 .post-content .figure-image .figLegend {
@@ -104,7 +105,7 @@
   vertical-align: middle;
   margin-right: 2vw;
 }
-@media (min-width: 768px) {
+@media (min-width: 280px) {
   .post-content .figure-image .figLegend::before {
     margin-right: 1vw;
   }
@@ -131,7 +132,7 @@
   height: 10px;
   margin-right: 1em;
 }
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   .content-1 .prev-title:before {
     background-size: 14px 16px;
     width: 14px;
@@ -154,7 +155,7 @@
   height: 11px;
   margin-right: 0.5em;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .content-1 .rate-movie:before {
     background-size: 20px 20px;
     width: 20px;
@@ -172,7 +173,7 @@
   margin-left: 0.5em;
   vertical-align: middle;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .content-1 .rate-movie:after {
     background-size: 55px 30px;
     width: 55px;
@@ -204,6 +205,14 @@
   line-height: 3vh;
   text-align: justify;
 }
+@media (max-width: 320px) {
+  .content-2 p {
+    text-align: left;
+  }
+  .content-2 .type-item {
+    font-size: 0.8em;
+  }
+}
 
 /*CONTENT 3 */
 .content-3 {
@@ -228,6 +237,11 @@
   line-height: 2vh;
   margin-top: 1vh;
 }
+@media (max-width: 315px) {
+  .content-3 .actors-desc {
+    font-size: 0.7em;
+  }
+}
 .content-3 .actors-desc img {
   width: 15vw;
   border-radius: 50%;
@@ -246,6 +260,11 @@
 /* CONTENT 4 */
 .content-4 {
   min-height: 50vh;
+}
+@media (max-width: 315px) {
+  .content-4 {
+    min-height: 60vh;
+  }
 }
 .content-4 .text-gray {
   margin-bottom: 2vh;
@@ -304,6 +323,11 @@
     height: 80px;
   }
 }
+@media (max-width: 280px) {
+  .btn-content {
+    height: 60px;
+  }
+}
 
 .btn-content a {
   color: #ffffff;
@@ -318,6 +342,14 @@
     width: 44vw;
     height: 50px;
     line-height: 50px;
+  }
+}
+@media (min-width: 280px) {
+  .btn-content a {
+    height: 35px;
+    line-height: 35px;
+    margin-top: 10px;
+    font-size: 0.8em;
   }
 }
 
@@ -341,6 +373,14 @@
   height: 15px;
   margin-right: 0.5em;
 }
+@media (max-width: 315px) {
+  .btn-content .btn-red:before {
+    width: 8px;
+    height: 11px;
+    background-size: 8px 11px;
+    margin-right: 0.2em;
+  }
+}
 
 .btn-content .btn-black:before {
   content: '';
@@ -352,6 +392,14 @@
   width: 14px;
   height: 15px;
   margin-right: 0.5em;
+}
+@media (max-width: 315px) {
+  .btn-content .btn-black:before {
+    width: 10px;
+    height: 11px;
+    background-size: 10px 11px;
+    margin-right: 0.2em;
+  }
 }
 
 /*# sourceMappingURL=components.css.map */
